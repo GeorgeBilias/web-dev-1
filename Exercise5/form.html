@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <title>Registration</title>
+        <script src="script.js"></script>
+</head>
+<body>
+
+    <header>
+
+        <div class="auth-buttons">
+            <a href="#" class="auth-button">Login</a>
+            <a href="form.html" class="auth-button active">Register</a>
+        </div>
+
+        <div class="title">
+            <img src="photos/logo/unique_logo.png" alt="logo" width="100" height="100">
+            <h1>TCMarketplace</h1>  
+        </div>
+
+        
+        <div class="main-bar">
+        <nav>
+            <ul>
+                <li><a href="index.html">AΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
+                <li><a href="categories.html">ΚΑΤΗΓΟΡΙΕΣ</a></li>
+                <li><a href="about_us.html">ABOUT US</a></li>
+                <li><a href="contact_info.html">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+            </ul>
+        </nav>    
+        </div>
+        
+    </header>
+
+    <main>
+
+    <form id="registrationForm" class="registrationForm" onsubmit="validateForm()">
+
+        <fieldset id="field4">
+        
+            <legend id="field4-legend">Εγγραφή</legend>
+
+        <fieldset id="field1">
+
+            <div class="form-control">
+
+                <label for="firstName">Όνομα:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" autocomplete="given-name" title="Παρακαλώ εισάγετε το όνομα σας" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            
+            </div>
+
+            <div class="form-control">
+
+                <label for="lastName">Επώνυμο:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Doe" autocomplete="family-name" title="Παρακαλώ εισάγετε το επίθετο σας" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            
+            </div>
+            
+            <div class="form-control">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" autocomplete="email" title="Παρακαλώ εισάγετε ένα έγκυρο email" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            
+            </div>
+            
+            <div class="form-control">
+
+                <label for="address">Διεύθυνση Κατοικίας:</label>
+                <input type="text" id="address" name="address" title="Παρακαλώ εισάγετε μια έγκυρη διεύθυνση" autocomplete="address-line1" placeholder="Address" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            
+            </div>
+
+            <div class="form-control">
+            
+                <label for="address_number">Αριθμος Διεύθυνσης Κατοικίας:</label>
+                <input type="number" id="address_number" name="address_number" placeholder="Address Number" autocomplete="off" title="Παρακαλώ εισάγετε ένα έγκυρο νούμερο" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            
+            </div>
+
+            <div class="form-control">
+
+                <label for="postal_code">Ταχυδρομικός Κώδικας:</label>
+                <input type="text" id="postal_code" name="postal_code" autocomplete="postal-code" title="Εισάγετε ΤΚ σε ενα απ'τα επιτρεπόμενα formats: 'Α ΒΒΒΒ', 'ΑΑ ΒΒΒ', 'ΑΑΑ ΒΒ', 'ΑΑΑΑ Β'" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            
+            </div>
+            
+            <div class="form-control">
+
+                <label for="phone">Αριθμος Τηλεφώνου:</label>
+                <!----><input type="tel" id="phone" name="phone" autocomplete="tel" title="Παρακαλώ εισάγετε ένα 10ψήφιο αριθμό τηλεφώνου χωρίς κενά" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            
+            </div>
+            
+            <div class="form-control">
+
+                <label for="birthdate">Ημερομηνία Γέννησης:</label>
+                <input type="date" id="birthdate" name="birthdate" autocomplete="off" required>
+                
+                <small>Error Message</small>
+            
+            </div>
+            
+            <div class="form-control">
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" autocomplete="username" placeholder="JohnDoe" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            
+            </div>
+            
+            <div class="form-control">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" autocomplete="off" placeholder="Password" required>
+                
+                <small>Error Message</small>
+            
+            </div>
+            
+            <div class="form-control">
+
+                <label for="confirmPassword">Επιβεβαίωση Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" autocomplete="off" placeholder="Password" required>
+                
+                <small>Error Message</small>
+            
+            </div>
+
+            <fieldset id="field3">
+
+            <legend>Επιλογές Επικοινωνίας</legend>
+
+            
+                <!-- Checkbox Options -->
+                <div class="checkbox-container">
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="sms" name="sms">
+                        <label for="sms">SMS</label>
+                    </div>
+                
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="email2" name="contactMethod">
+                        <label for="email2">Email</label>
+                    </div>
+                
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="viber" name="contactMethod">
+                        <label for="viber">Viber</label>
+                    </div>
+                
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="whatsapp" name="contactMethod"> 
+                        <label for="whatsapp">WhatsApp</label>
+                    </div>
+                </div>
+
+            </fieldset>
+              
+              
+            
+
+        </fieldset>
+
+        <fieldset id="field2">
+
+            <details>
+
+            <summary id="questionaire_title"><u>Σύντομο ερωτηματολόγιο</u></summary>
+
+            
+
+            <label for="adType">Τι τύπος αγγελίας σας ενδιαφέρει;</label>
+            <input type="text" id="adType" name="adType" list="adlist" autocomplete="on">
+            <datalist id ="adlist">
+                <option>Consoles</option>
+                <option>Games</option>
+                <option>PCs</option>
+                <option>Cars</option>
+                <option>Motorcycles</option>
+                <option>Boats</option>
+            </datalist>
+
+            <label for="jobPosition">Ποία είναι η θέση εργασίας σας;</label>
+            <input type="text" id="jobPosition" name="jobPosition" list="joblist" autocomplete="on">
+            <datalist id="joblist">
+                <option>Manager</option>
+                <option>Employee</option>
+                <option>Freelancer</option>
+                <option>Unemployed</option>
+            </datalist>
+
+            <label for="preferredResidence">Σε ποιές περιοχές θα σας ενδιέφερε να κατοικήσετε;</label>
+            <input type="text" id="preferredResidence" name="preferredResidence">
+
+
+            <label for="professionalAreas">Σε ποιές περιοχές θα σας ενδιέφερε να δραστηριοποιηθείτε επαγγελματικά;</label>
+            <input type="text" id="professionalAreas" name="professionalAreas">
+
+            <label for="vehicleTypes">Τι τύπους οχημάτων χρησιμοποιείτε;</label>
+            <input type="text" id="vehicleTypes" name="vehicleTypes" list="vehiclelist" autocomplete="on">
+            <datalist id="vehiclelist">
+                <option>Car</option>
+                <option>Motorcycle</option>
+            </datalist>  
+
+            </details>
+
+        </fieldset>
+
+        <input type="submit" value="Υποβολή">
+
+
+
+        </fieldset>
+    </form>
+</main>
+
+<aside>
+    <div class="left-column">
+        <h2>Newsletter Signup</h2>
+        <p>Subscribe to our newsletter for the latest updates!</p>
+        <form action="#" method="post">
+            <label for="email_signup">email:</label>
+            <input type="email" id="email_signup" name="email_signup" autocomplete="email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</aside>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h2>ΓΕΩΡΓΙΟΣ ΜΠΙΛΙΑΣ</h2>
+                <p><a href="mailto:p3200278@aueb.gr">p3200278@aueb.gr</a></p>
+                <a href="https://github.com/GeorgeBilias">
+                    <img src="photos/footer2.png" alt="GitHub" width="25" height="25">
+                </a>
+                <a href="https://www.linkedin.com/in/george-bilias-02/">
+                    <img src="photos/footer1.png" alt="LinkedIn" width="25" height="25">
+                </a>
+            </div>
+            <div class="footer-column">
+                <h2>ΙΩΑΝΝΗΣ ΠΑΤΟΥΧΑΣ</h2>
+                <p><a href="mailto:p3200149@aueb.gr">p3200149@aueb.gr</a></p>
+                <a href="https://github.com/GPatouchas">
+                    <img src="photos/footer2.png" alt="GitHub" width="25" height="25">
+                </a>
+                <a href="https://www.linkedin.com/in/giannis-patouchas-8bb774240/">
+                    <img src="photos/footer1.png" alt="LinkedIn" width="25" height="25">
+                </a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <a href="about_us.html">Who We Are</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Cookie Policy</a>
+            <a href="contact_info.html">Contact Us</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

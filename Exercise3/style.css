@@ -1,0 +1,547 @@
+/* Added font of title of website */
+@font-face {
+  font-family: 'MyFont';
+  src: url('fonts/Robot9000-MVxZx.ttf') format('woff2'); 
+  }
+
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol,li {
+  margin: 0;
+  padding: 0;
+}
+/*Adding the grid*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(255,255,255);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+
+}
+
+/*HEADER*/
+
+header {
+  display: grid;
+  grid-area: header; /*setting the header for the grid*/
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1rem 0;
+}
+
+main {
+  display: grid;
+  grid-area: main; /*setting the main for the grid*/
+  padding: 1rem;
+}
+
+/*added display flex layout for title*/
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+.title img {
+  height: auto;
+  margin-right: 10px;
+}
+
+.main-bar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.main-bar li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.main-bar a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.main-bar {
+  background-color: #000000;
+}
+
+.main-bar a:hover {
+  color: rgb(204, 197, 197);
+}
+
+/* CONTACT US SECTION*/
+
+.legend fieldset {  
+  border: 2px solid #000000;
+  border-radius: 5px; 
+  padding: 15px;
+}
+
+.legend {  
+  margin-bottom: 15%;
+  margin-top: 10%;
+}
+
+.legend legend {
+  font-size: 20px; 
+  font-weight: bold;
+  color: #000000; 
+  margin-bottom: 10px;
+}
+
+.legend input[type="text"], 
+.legend input[type="email"],
+.legend input[type="tel"],
+.legend input[type="number"],
+.legend textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  box-sizing: border-box; 
+  resize:none;
+}
+
+.legend input[type="submit"] { 
+  background-color: #000000; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.legend input[type="submit"]:hover { 
+  background-color: #000000;
+}
+
+
+.legend input[type="submit"]:hover {
+  background-color: #292929; 
+}
+
+/* footer section */
+
+footer {
+  display: grid;
+  grid-area: footer; /*setting the footer for the grid*/
+  background-color: #1d1d1d;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+/* added grid collumns to the footer*/
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr); /* Three columns in the footer */
+  grid-gap: 20px; /* Adjust the gap between columns */
+}
+/*Added flex layout of the footer content*/
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex: 1;
+}
+/*Edit the footer column with flex*/
+.footer-column {
+  flex: 1;
+  text-align: left;
+  padding: 0 20px;
+}
+  
+footer h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+  
+footer p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+  
+footer img {
+  margin: 5px;
+  vertical-align: middle;
+}
+/*Added grid layout for footer links*/  
+.footer-links {
+  margin-top: 16%;
+  margin-left:17%;
+  display: grid;
+  grid-auto-flow: column; /* Place links in a row */
+  grid-auto-columns: max-content; /* Adjust column width based on content */
+  gap: 10% /* Adjust the gap between links */
+}
+/*Edited the links to be better for the new layout*/
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 10px 0; /* Add padding to adjust the link height */
+}
+  
+.footer-links a:hover {
+  text-decoration: underline;
+}
+  
+/* categories section in categories.html */
+
+
+.categories {  /* making the listings as a grid */  
+  justify-content: center;
+}
+/* Added grid layout for the categories*/
+.grid3 {
+  margin:15%;
+  display: grid; /* making the listings as a grid */
+  grid-template-columns: repeat(auto-fill, minmax(350px, 2fr)); /* Adjust the column width as needed */
+  gap: 20px;
+  list-style: none;
+  text-align: center;
+  margin-right:5%;
+  margin-left:5%;    
+}
+  
+.grid3 li {
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15%;
+  border: 2px solid #000000;
+  transition: transform 0.2s;
+}
+
+.grid3 li:hover {
+  transform: scale(1.05);   
+}
+
+.grid3 li a {
+  text-decoration: none;
+  color: #847f7f;
+}
+
+.grid3 li img {
+  padding: 3%;
+}
+
+.category img {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Style for subcategory links */
+.category a {
+  text-decoration: none;
+  color: #555;
+  font-weight: normal;  
+}
+
+.category a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* main page section */
+
+.introduction { 
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 15%;
+}
+
+
+.introduction p {
+  font-size: 20px; 
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+/*adding our custom font to the title*/
+.title h1 {
+  font-family: 'MyFont', sans-serif;
+}
+
+/* playstation categories */
+
+/* making the listings as a grid with use of flex*/
+.playstation-listings {  
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+/* Added grid layout for the playstation categories*/
+.grid {
+  margin:15%;
+  display: grid; /* making the listings as a grid */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust the column width as needed */
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+  
+.grid li {
+  border: 1px solid #ddd;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 7%;
+}
+.grid li h5{
+  color:#555;
+}
+
+  /* cars category */
+
+/* making the listings as a grid with use of flex*/
+.car-listings {  
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+/* Added grid layout for the car categories*/
+.grid2 {
+  margin:15%;
+  display: grid; /* making the listings as a grid */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust the column width as needed */
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+  
+.grid2 li {
+  border: 1px solid #ddd;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15%;
+}
+
+/* ps5 */
+
+/* description of product */
+
+
+.item {
+  margin-top:8%;
+  margin-bottom:30%;
+  margin-left:10%;
+  margin-right:10%;
+}
+
+/* Added flexbox layout for the image and text */
+.item div {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; 
+  
+}
+.item #views {
+  margin-right: 10px; 
+  margin-bottom: 18px;
+}
+.item p {
+  margin: 0; 
+}
+
+.item img {
+  margin-top:2%;
+}
+
+/* table customisation of product specs */
+
+.item table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom:8%;
+  margin-top:8%;
+}
+
+.item th {
+  background-color: #f2f2f2;
+}
+
+.item th, td { 
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.item .sub-1 { 
+  font-weight: bold;
+}
+
+.item .sub-2 { 
+  color: #3f86d1;
+}
+
+.item a{  
+  color: #1d1d1d;
+}
+
+.item h5{ 
+  color: #555;
+}
+
+.item #pic{
+  border-radius: 10px;
+}
+
+.item del{
+  color: #a1a0a0;
+}
+
+.item .discount{
+  background-color: black;
+  padding: 5px;
+  color: white;
+  border-radius: 3px;
+}
+
+
+/* Style the paragraph text */
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#border2 {
+  align-items: center;
+  border:#000000 solid; 
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+/* buy (contact) from seller section */
+/* using float we make the button appear next to the text */
+
+#border {
+  margin-top: 3%;
+  align-items: center;
+  border: 2px dashed #007bff; /* Dashed border style */
+  padding: 10px;
+}
+
+#buy {
+  font-size: 16px;
+}
+
+#buy2 {
+  background-color: #007bff; /* Button background color */
+  color: white; /* Text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+    
+}
+
+/* Hover effect for the button */
+#buy2:hover {
+  background-color: #0056b3;
+}
+/* Added flex for the image container */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.image-container img {
+  display: inline;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+a:link {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: none;
+  }
+  
+a:hover {
+  color: rgb(151, 151, 151);
+  background-color: transparent;
+  text-decoration: underline;
+}
+  
+a:active {
+  color: rgb(80, 80, 79);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.subcategory a:link {
+  color:rgb(80, 80, 79);
+}
+
+.subcategory a:hover {
+  color: rgb(38, 38, 38);
+  background-color: transparent;
+  text-decoration: underline;
+}
+.main-bar .active a{
+  color: #a1a0a0;
+}
+.car-listings a:link{
+  color:#292929;
+}
+.playstation-listings a:link{
+  color:#292929;
+}
+/* Style the about us section */
+  
+.about_us {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+  .about_us h1 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.about_us h2 {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.about_us img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.about_us h3 {
+    font-size: 1rem;
+    margin: 10px;
+}

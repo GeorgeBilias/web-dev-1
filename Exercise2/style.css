@@ -1,0 +1,510 @@
+/*setting stock margin and padding*/
+body, h1, h2, h3, h4, h5, h6, p, ul, ol,li {
+    margin: 0;
+    padding: 0;
+}
+/*setting the font and background color of the body section*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255,255,255);
+}
+
+/*HEADER*/
+
+/*setting the color for tex background color,text location and the padding for the header*/
+header {
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1rem 0;
+}
+/*aligning the title to the middle,settings its padding and margin to give more space*/
+.title {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    margin-bottom:5%
+}
+/*Aligning the TC logo*/
+.title img {
+    height: auto;
+    margin-right: 10px;
+}
+/*remove the dots from the list*/
+.main-bar ul {
+    list-style-type: none;
+    padding: 0;
+}
+/*Display the nav bar in inline*/
+.main-bar li { 
+    display: inline;
+    margin-right: 20px;
+}
+/*Style the nav bar choices*/
+.main-bar a {
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+/* nav bar backround color*/
+.main-bar{ 
+    background-color: #000000;
+
+}
+/*when hovering to nav bar change to grey*/
+.main-bar a:hover { 
+    color: rgb(204, 197, 197); 
+    
+
+}
+
+/* CONTACT US SECTION*/
+
+/*Set the border around field*/
+.legend fieldset {  
+    border: 2px solid #000000;
+    border-radius: 5px; 
+    padding: 15px;
+}
+/* field placement to the page */
+.legend { 
+    margin-bottom: 15%;
+    margin-top: 10%;
+}
+/* customisation of text on top ΕΙΣΑΓΩΓΗ ΣΤΟΙΧΕΙΩΝ ΕΠΙΚΟΙΝΩΝΙΑΣ */
+.legend legend {
+    font-size: 20px; 
+    font-weight: bold;
+    color: #000000; 
+    margin-bottom: 10px;
+}
+/* customisation of the field boxes */
+.legend input[type="text"],
+.legend input[type="email"],
+.legend input[type="tel"],
+.legend input[type="number"],
+.legend textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    resize:none;
+}
+/* customisation of submit button*/
+.legend input[type="submit"] {
+    background-color: #000000; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* customisation of  submit button when hovering */
+.legend input[type="submit"]:hover { 
+    background-color: #292929; 
+}
+
+
+/* footer section */
+
+/* main footer customisation */
+footer {
+    background-color: #1d1d1d;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+/* this allows the footer links to be together on the right and not in a new line */
+.footer-container {
+    margin: 0 auto;
+    justify-content: space-between;
+}
+/* collumns set on the left */
+.footer-column {
+    padding: 0 20px;
+    text-align: left;
+}
+/*style the h2 of footer*/
+footer h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+/*style the p of footer*/
+footer p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+/*align the imgs of footer*/
+footer img { 
+    margin: 5px;
+    vertical-align: middle;
+}
+/*align the links of the footer*/
+.footer-links {
+    margin-top: 20px;
+}
+/*style the links of the footer color,size and align them*/
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 14px;
+}
+/*style the links of the footer when hovering to them*/
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* categories section in categories.html */
+
+/*center the categories*/
+.categories { 
+    
+    justify-content: center;
+}
+
+/*style and align the whole box for the categories*/
+.grid3 {
+    margin:15%;
+    list-style: none;
+    text-align: center;
+    margin-right:5%;
+    margin-left:5%;
+    
+    
+}
+/*style each category*/
+.grid3 li {
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5%;
+    border: 2px solid #000000;
+    transition: transform 0.2s;
+
+}
+/*style each category when hovering to it, makes it bigger*/
+.grid3 li:hover {
+    transform: scale(1.05);
+    
+}
+/*style the color of the subcategories/links */
+.grid3 li a {
+    text-decoration: none;
+    color: #847f7f;
+}
+
+/*style the categories img, give it a padding*/
+.grid3 li img {
+    padding: 3%;
+}
+
+.category img { /* image of each category */
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Style for subcategory links */
+.category a {
+    text-decoration: none;
+    color: #555;
+    font-weight: normal;
+    
+}
+/*style the color of the subcategories/links when hovering to them*/
+.category a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* main page section */
+
+/* placement of welcome message */
+.introduction { 
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 15%;
+}
+
+/*setting the font size and font family for the p in paragraph*/
+.introduction p {
+    font-size: 20px; 
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+
+}
+
+/* playstation categories */
+
+/*aligning the listings to the center*/
+.playstation-listings {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+/* aligning the listings, removing dots from the list and padding */
+.grid {
+    margin:15%;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+  
+/* style of each listing */
+.grid li {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 7%;
+
+}
+/* style of h5 in each listing */
+.grid li h5{
+    color:#555;
+}
+
+  /* cars category */
+
+/*aligning the listings to the center*/
+.car-listings {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* aligning the listings, removing dots from the list and padding */  
+.grid2 {
+    margin:15%;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+/* style of each listing */  
+.grid2 li {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15%;
+
+}
+
+/* ps5 */
+
+/* description of product */
+
+/*style of the whole box*/
+.item {
+    margin-top:8%;
+    margin-bottom:30%;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+/* Vertically center align the content */
+.item div {
+    align-items: center;
+}
+/* Add some space between the image and text */
+.item #views {
+    margin-right: 10px;
+    margin-bottom: 18px;
+  }
+/* Remove default margins on the <p> element */
+.item p {
+    margin: 0;
+}
+/* add a margin to the image to create some space */
+.item img {
+    margin-top:2%;
+}
+
+/* table customisation of product specs */
+
+.item table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom:8%;
+    margin-top:8%;
+}
+/* set the background color of the table */
+.item th {
+    background-color: #f2f2f2;
+}
+/* each box has a border */
+.item th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+/* collumn name text set as bold*/
+.item .sub-1 {
+    font-weight: bold;
+}
+/* colour of text of a specific category */
+.item .sub-2 {
+    color: #3f86d1;
+}
+/* set the color of the link */
+.item a{
+    color: #1d1d1d;
+}
+/* set the color of h5 */
+.item h5{ 
+    color: #555;
+  }
+/* set a border of the picture */
+.item #pic{
+    border-radius: 10px;
+}
+/* set the color of the deleted price */
+.item del{
+    color: #a1a0a0;
+}
+/* style the discount box */
+.item .discount{
+    background-color: black;
+    padding: 5px;
+    color: white;
+    border-radius: 3px;
+}
+
+/* Style the paragraph text */
+p {
+    font-size: 18px;
+    line-height: 1.5;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#border2 {
+    align-items: center;
+    border:#000000 solid; 
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+/* buy (contact) seller section */
+
+/*style and align the whole box of contact seller*/
+#border {
+    margin-top: 3%;
+    align-items: center;
+    border: 2px dashed #007bff; /* Dashed border style */
+    padding: 10px;
+}
+/*set the font for the buy section*/
+#buy {
+    font-size: 16px;
+}
+/*style the button of contact seller*/
+#buy2 {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+/* Hover effect for the button */
+#buy2:hover {
+    background-color: #0056b3;
+}
+
+/* Style anda align for the container of the images and text */
+.image-container {
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+/* style the imgs for the pics to be inline as well align them and add a border radius */
+.image-container img {
+    display: inline;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* set all stock links as white and style them*/
+a:link {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+}
+/* set all links hover as grey and style them*/
+a:hover {
+    color: rgb(151, 151, 151);
+    background-color: transparent;
+    text-decoration: underline;
+}
+/*when active set the color of the link as grey and style them*/
+a:active {
+    color: rgb(80, 80, 79);
+    background-color: transparent;
+    text-decoration: underline;
+}
+/* set the color of subcategory link as grey*/
+.subcategory a:link {
+    color:rgb(80, 80, 79);
+}
+/* set the color of subcategory link when hovering as darker grey*/
+.subcategory a:hover {
+    color: rgb(38, 38, 38);
+    background-color: transparent;
+    text-decoration: underline;
+}
+/* set the color of subcategory link when active as grey*/
+.main-bar .active a{
+    color: #a1a0a0;
+}
+/* set the color of car listings link as dark grey, override white*/
+.car-listings a:link{
+    color:#292929;
+}
+/* set the color of playstation listings link as dark grey, override white*/
+.playstation-listings a:link{
+    color:#292929;
+}
+/* style the about us section*/
+.about_us {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+/* style the h1 on about us size and margin to create space*/
+.about_us h1 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+/* style the h2 on about us size and margin to create space*/
+.about_us h2 {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+/* style the img on about us size and margin to create space, as well add a border radius and specific width and height*/
+.about_us img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+/* style the h3 on about us size and margin to create space*/
+.about_us h3 {
+    font-size: 1rem;
+    margin: 10px;
+}
