@@ -13,10 +13,10 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol,li {
 body {
   font-family: Arial, sans-serif;
   background-color: rgb(255,255,255);
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas: 
+  display: grid; /*setting the grid*/
+  grid-template-columns: 1fr; /*setting the grid columns*/
+  grid-template-rows: auto 1fr auto; /*setting the grid rows*/
+  grid-template-areas: /*setting the grid areas*/
     "header"
     "main"
     "footer";
@@ -26,8 +26,8 @@ body {
 /*HEADER*/
 
 header {
-  display: grid;
-  grid-area: header; /*setting the header for the grid*/
+  display: grid; /*setting it as the grid*/
+  grid-area: header; /*setting the header area for the grid*/
   text-align: center;
   background-color: #000000;
   color: #ffffff;
@@ -133,7 +133,7 @@ main {
 /* footer section */
 
 footer {
-  display: grid;
+  display: grid; /*setting it as grid*/
   grid-area: footer; /*setting the footer for the grid*/
   background-color: #1d1d1d;
   color: #fff;
