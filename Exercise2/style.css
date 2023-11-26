@@ -1,54 +1,54 @@
 /*setting stock margin and padding*/
 body, h1, h2, h3, h4, h5, h6, p, ul, ol,li {
-    margin: 0;
-    padding: 0;
+    margin: 0; /*setting the margin to 0*/
+    padding: 0; /*setting the padding to 0*/
 }
 /*setting the font and background color of the body section*/
 body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(255,255,255);
+    font-family: Arial, sans-serif; /*setting the font family*/
+    background-color: rgb(255,255,255); /*setting the background color*/
 }
 
 /*HEADER*/
 
 /*setting the color for tex background color,text location and the padding for the header*/
 header {
-    text-align: center;
-    background-color: #000000;
-    color: #ffffff;
-    padding: 1rem 0;
+    text-align: center; /*setting the text to be in the center*/
+    background-color: #000000; /*setting the background color*/
+    color: #ffffff; /*setting the color of the text*/
+    padding: 1rem 0; /*setting the padding*/
 }
 /*aligning the title to the middle,settings its padding and margin to give more space*/
 .title {
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10%;
-    margin-bottom:5%
+    align-items: center; /*aligning the title to the center*/
+    justify-content: space-between; /*aligning the title to the center*/
+    padding: 0 10%; /*setting the padding*/
+    margin-bottom:5% /*setting the margin*/
 }
 /*Aligning the TC logo*/
 .title img {
-    height: auto;
-    margin-right: 10px;
+    height: auto; /*setting the height*/
+    margin-right: 10px; /*setting the margin*/
 }
 /*remove the dots from the list*/
 .main-bar ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none; /*removing the dots from the list*/
+    padding: 0; /*setting the padding*/
 }
 /*Display the nav bar in inline*/
 .main-bar li { 
-    display: inline;
-    margin-right: 20px;
+    display: inline; /*displaying the nav bar in inline*/
+    margin-right: 20px; /*setting the margin*/
 }
 /*Style the nav bar choices*/
 .main-bar a {
-    text-decoration: none;
-    color: #ffffff;
+    text-decoration: none; /*removing the underline from the nav bar*/
+    color: #ffffff; /*setting the color of the nav bar text*/
     
 }
 /* nav bar backround color*/
 .main-bar{ 
-    background-color: #000000;
+    background-color: #000000; 
 
 }
 /*when hovering to nav bar change to grey*/
@@ -62,49 +62,49 @@ header {
 
 /*Set the border around field*/
 .legend fieldset {  
-    border: 2px solid #000000;
-    border-radius: 5px; 
-    padding: 15px;
+    border: 2px solid #000000; /*setting the border*/
+    border-radius: 5px; /*setting the border radius*/
+    padding: 15px; /*setting the padding*/
 }
 /* field placement to the page */
 .legend { 
-    margin-bottom: 15%;
-    margin-top: 10%;
+    margin-bottom: 15%; /*setting the margin bottom */
+    margin-top: 10%; /*setting the margin top*/
 }
 /* customisation of text on top ΕΙΣΑΓΩΓΗ ΣΤΟΙΧΕΙΩΝ ΕΠΙΚΟΙΝΩΝΙΑΣ */
 .legend legend {
-    font-size: 20px; 
-    font-weight: bold;
-    color: #000000; 
-    margin-bottom: 10px;
+    font-size: 20px; /*setting the font size*/
+    font-weight: bold; /*setting the font weight*/
+    color: #000000;  /*setting the color*/
+    margin-bottom: 10px; /*setting the margin bottom*/
 }
 /* customisation of the field boxes */
-.legend input[type="text"],
+.legend input[type="text"], 
 .legend input[type="email"],
 .legend input[type="tel"],
 .legend input[type="number"],
 .legend textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc; 
-    border-radius: 5px; 
-    box-sizing: border-box; 
-    resize:none;
+    width: 100%; /*setting the width of the inputs*/
+    padding: 10px; /*setting the padding*/
+    margin: 5px 0; /*setting the margin*/
+    border: 1px solid #ccc;  /*setting the border*/
+    border-radius: 5px; /*setting the border radius*/
+    box-sizing: border-box; /*setting the box sizing*/
+    resize:none; /*setting the resize to none*/
 }
 /* customisation of submit button*/
 .legend input[type="submit"] {
-    background-color: #000000; 
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-weight: bold;
-    cursor: pointer;
+    background-color: #000000; /*setting the background color*/
+    color: white; /*setting the color*/
+    border: none; /*setting the border*/
+    border-radius: 5px; /*setting the border radius*/
+    padding: 10px 20px;   /*setting the padding*/
+    font-weight: bold;  /*setting the font weight*/
+    cursor: pointer;    /*setting the cursor*/
 }
 /* customisation of  submit button when hovering */
 .legend input[type="submit"]:hover { 
-    background-color: #292929; 
+    background-color: #292929; /*setting the background color*/
 }
 
 
@@ -112,50 +112,50 @@ header {
 
 /* main footer customisation */
 footer {
-    background-color: #1d1d1d;
-    color: #fff;
-    padding: 30px 0;
-    text-align: center;
+    background-color: #1d1d1d; /*setting the background color*/
+    color: #fff; /*setting the color*/
+    padding: 30px 0; /*setting the padding*/
+    text-align: center; /*setting the text align*/
 }
 /* this allows the footer links to be together on the right and not in a new line */
 .footer-container {
-    margin: 0 auto;
-    justify-content: space-between;
+    margin: 0 auto; /*setting the margin*/
+    justify-content: space-between; /*setting the justify content*/
 }
 /* collumns set on the left */
 .footer-column {
-    padding: 0 20px;
-    text-align: left;
+    padding: 0 20px; /*setting the padding*/
+    text-align: left; /*setting the text align*/
 }
 /*style the h2 of footer*/
 footer h2 {
-    font-size: 18px;
-    margin: 10px 0;
+    font-size: 18px; /*setting the font size*/
+    margin: 10px 0; /*setting the margin*/
 }
 /*style the p of footer*/
 footer p {
-    font-size: 14px;
-    margin: 5px 0;
+    font-size: 14px; /*setting the font size*/
+    margin: 5px 0; /*setting the margin*/
 }
 /*align the imgs of footer*/
 footer img { 
-    margin: 5px;
-    vertical-align: middle;
+    margin: 5px; /*setting the margin*/
+    vertical-align: middle; /*setting the vertical align*/
 }
 /*align the links of the footer*/
 .footer-links {
-    margin-top: 20px;
+    margin-top: 20px; /*setting the margin top*/
 }
 /*style the links of the footer color,size and align them*/
 .footer-links a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 20px;
-    font-size: 14px;
+    color: #fff; /*setting the color*/
+    text-decoration: none; /*setting the text decoration*/
+    margin: 0 20px; /*setting the margin*/
+    font-size: 14px; /*setting the font size*/
 }
 /*style the links of the footer when hovering to them*/
 .footer-links a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /*setting the text decoration*/
 }
 
 /* categories section in categories.html */
@@ -163,79 +163,79 @@ footer img {
 /*center the categories*/
 .categories { 
     
-    justify-content: center;
+    justify-content: center; /*setting the justify content*/
 }
 
 /*style and align the whole box for the categories*/
 .grid3 {
-    margin:15%;
-    list-style: none;
-    text-align: center;
-    margin-right:5%;
-    margin-left:5%;
+    margin:15%; /*setting the margin*/
+    list-style: none; /*removing the dots from the list*/
+    text-align: center; /*setting the text align*/
+    margin-right:5%; /*setting the margin right*/
+    margin-left:5%; /*setting the margin left*/
     
     
 }
 /*style each category*/
 .grid3 li {
-    padding: 15px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    margin-bottom: 5%;
-    border: 2px solid #000000;
-    transition: transform 0.2s;
+    padding: 15px; /*setting the padding*/
+    background-color: #ffffff; /*setting the background color*/
+    border-radius: 5px; /*setting the border radius*/
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /*setting the box shadow*/
+    margin-bottom: 5%; /*setting the margin bottom*/
+    border: 2px solid #000000; /*setting the border*/
+    transition: transform 0.2s; /*setting the transition*/
 
 }
 /*style each category when hovering to it, makes it bigger*/
 .grid3 li:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /*setting the transform*/
     
 }
 /*style the color of the subcategories/links */
 .grid3 li a {
-    text-decoration: none;
-    color: #847f7f;
+    text-decoration: none; /*removing the underline from the links*/
+    color: #847f7f; /*setting the color to grey*/
 }
 
 /*style the categories img, give it a padding*/
 .grid3 li img {
-    padding: 3%;
+    padding: 3%; /*setting the padding*/
 }
 
 .category img { /* image of each category */
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
+    border-radius: 50%; /*setting the border radius*/
+    display: block; /*setting the display*/
+    margin: 0 auto; /*setting the margin*/
 }
 
 /* Style for subcategory links */
 .category a {
-    text-decoration: none;
-    color: #555;
-    font-weight: normal;
+    text-decoration: none; /*removing the underline from the links*/
+    color: #555; /*setting the color*/
+    font-weight: normal; /*setting the font weight*/
     
 }
 /*style the color of the subcategories/links when hovering to them*/
 .category a:hover {
-    text-decoration: none;
-    color: #000000;
+    text-decoration: none; /*removing the underline from the links*/
+    color: #000000; /*setting the color*/
 }
 
 /* main page section */
 
 /* placement of welcome message */
 .introduction { 
-    margin-top: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 15%;
+    margin-top: 10%; /*setting the margin top*/
+    margin-left: 10%; /*setting the margin left*/
+    margin-right: 10%; /*setting the margin right*/
+    margin-bottom: 15%; /*setting the margin bottom*/
 }
 
 /*setting the font size and font family for the p in paragraph*/
 .introduction p {
-    font-size: 20px; 
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px; /*setting the font size*/
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /*setting the font family*/
     
 
 }
@@ -244,57 +244,57 @@ footer img {
 
 /*aligning the listings to the center*/
 .playstation-listings {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: center; /*setting the justify content*/
+    align-items: center; /* aligning the listings to the center*/
+    text-align: center; /*setting the text align to center*/
   }
 
 /* aligning the listings, removing dots from the list and padding */
 .grid {
-    margin:15%;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
+    margin:15%; /*setting the margin*/
+    gap: 20px; /*setting the gap*/
+    list-style: none; /*removing the dots from the list*/
+    padding: 0; /*setting the padding*/
 }
   
 /* style of each listing */
 .grid li {
-    border: 1px solid #ddd;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    margin-bottom: 7%;
+    border: 1px solid #ddd; /*setting the border*/
+    padding: 15px; /*setting the padding*/
+    background-color: #f9f9f9; /*setting the background color*/
+    border-radius: 5px; /*setting the border radius*/
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /*setting the box shadow*/
+    margin-bottom: 7%; /*setting the margin bottom*/
 
 }
 /* style of h5 in each listing */
 .grid li h5{
-    color:#555;
+    color:#555; /*setting the color*/
 }
 
   /* cars category */
 
 /*aligning the listings to the center*/
 .car-listings {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: center; /*setting the justify content*/
+    align-items: center; /* aligning the listings to the center*/
+    text-align: center; /*setting the text align to center*/
 }
 /* aligning the listings, removing dots from the list and padding */  
 .grid2 {
-    margin:15%;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
+    margin:15%; /*setting the margin*/
+    gap: 20px; /*setting the gap*/
+    list-style: none; /*removing the dots from the list*/
+    padding: 0; /*setting the padding*/
 }
 /* style of each listing */  
 .grid2 li {
-    border: 1px solid #ddd;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    margin-bottom: 15%;
+    border: 1px solid #ddd; /*setting the border*/
+    padding: 15px; /*setting the padding*/
+    background-color: #f9f9f9;  /*setting the background color*/
+    border-radius: 5px; /*setting the border radius*/
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /*setting the box shadow*/
+    margin-bottom: 15%; /*setting the margin bottom*/
 
 }
 
@@ -304,37 +304,37 @@ footer img {
 
 /*style of the whole box*/
 .item {
-    margin-top:8%;
-    margin-bottom:30%;
-    margin-left:10%;
-    margin-right:10%;
+    margin-top:8%; /*setting the margin top*/
+    margin-bottom:30%; /*setting the margin bottom*/
+    margin-left:10%; /*setting the margin left*/
+    margin-right:10%; /*setting the margin right*/
 }
 
 /* Vertically center align the content */
 .item div {
-    align-items: center;
+    align-items: center; /*aligning items to the center*/
 }
 /* Add some space between the image and text */
 .item #views {
-    margin-right: 10px;
-    margin-bottom: 18px;
+    margin-right: 10px; /*setting the margin right*/
+    margin-bottom: 18px; /*setting the margin bottom*/
   }
 /* Remove default margins on the <p> element */
 .item p {
-    margin: 0;
+    margin: 0; /*setting the margin*/
 }
 /* add a margin to the image to create some space */
 .item img {
-    margin-top:2%;
+    margin-top:2%; /*setting the margin top*/
 }
 
 /* table customisation of product specs */
 
 .item table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-bottom:8%;
-    margin-top:8%;
+    border-collapse: collapse; 
+    width: 100%; /*setting the width of the table*/
+    margin-bottom:8%; /*setting the margin bottom*/
+    margin-top:8%; /*setting the margin top*/
 }
 /* set the background color of the table */
 .item th {
@@ -342,14 +342,14 @@ footer img {
 }
 /* each box has a border */
 .item th, td {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
+    border: 1px solid #dddddd; /*setting the border*/
+    text-align: left; /*align text to the left*/
+    padding: 8px; /*setting the padding*/
 }
 
 /* collumn name text set as bold*/
 .item .sub-1 {
-    font-weight: bold;
+    font-weight: bold; 
 }
 /* colour of text of a specific category */
 .item .sub-2 {
@@ -373,49 +373,49 @@ footer img {
 }
 /* style the discount box */
 .item .discount{
-    background-color: black;
-    padding: 5px;
-    color: white;
-    border-radius: 3px;
+    background-color: black; /*setting the background color to black*/
+    padding: 5px; /*setting the padding*/
+    color: white; /*setting the color of text inside to white*/
+    border-radius: 3px; /*setting the border radius*/
 }
 
 /* Style the paragraph text */
 p {
-    font-size: 18px;
-    line-height: 1.5;
+    font-size: 18px; /*setting the font size*/
+    line-height: 1.5; /*setting the line height*/
 
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /*setting the font family*/
 }
 
 #border2 {
-    align-items: center;
-    border:#000000 solid; 
-    border-radius: 10px;
-    padding: 10px;
+    align-items: center; /*aligning items to the center*/
+    border:#000000 solid;  /*setting the border*/
+    border-radius: 10px; /*setting the border radius*/
+    padding: 10px; /*setting the padding*/
   }
 
 /* buy (contact) seller section */
 
 /*style and align the whole box of contact seller*/
 #border {
-    margin-top: 3%;
-    align-items: center;
+    margin-top: 3%; /*setting the margin top*/
+    align-items: center; /*aligning items to the center*/
     border: 2px dashed #007bff; /* Dashed border style */
-    padding: 10px;
+    padding: 10px; /*setting the padding*/
 }
 /*set the font for the buy section*/
 #buy {
-    font-size: 16px;
+    font-size: 16px; /*setting the font size*/
 }
 /*style the button of contact seller*/
 #buy2 {
     background-color: #007bff; /* Button background color */
     color: white; /* Text color */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+    padding: 10px 20px; /* Some padding */
+    border: none; /*removing the border*/
+    border-radius: 5px; /*setting the border radius*/
+    cursor: pointer; /* Mouse pointer on hover */
+    font-size: 16px; /*setting the font size*/
     
 }
 
@@ -427,47 +427,47 @@ p {
 /* Style anda align for the container of the images and text */
 .image-container {
     justify-content: center;
-    align-items: center;
-    margin: 20px 0;
+    align-items: center; /*aligning items to the center*/
+    margin: 20px 0; /*setting the margin*/
 }
 /* style the imgs for the pics to be inline as well align them and add a border radius */
 .image-container img {
-    display: inline;
-    margin: 10px;
-    border-radius: 10px;
+    display: inline; /*setting the display*/
+    margin: 10px; /*setting the margin*/
+    border-radius: 10px; /*setting the border radius*/
 }
 
 /* set all stock links as white and style them*/
 a:link {
-    color: rgb(255, 255, 255);
-    background-color: transparent;
-    text-decoration: none;
+    color: rgb(255, 255, 255); /*setting the color*/
+    background-color: transparent; /*setting the background color*/
+    text-decoration: none; /*removing the underline from the links*/
 }
 /* set all links hover as grey and style them*/
 a:hover {
-    color: rgb(151, 151, 151);
-    background-color: transparent;
-    text-decoration: underline;
+    color: rgb(151, 151, 151); /*setting the color to the grey*/
+    background-color: transparent; /*setting the background color*/
+    text-decoration: underline; /*setting the text decoration*/
 }
 /*when active set the color of the link as grey and style them*/
 a:active {
-    color: rgb(80, 80, 79);
-    background-color: transparent;
-    text-decoration: underline;
+    color: rgb(80, 80, 79); /*setting the color to the grey*/
+    background-color: transparent; /*setting the background color*/
+    text-decoration: underline; /*setting the text decoration to add underline*/
 }
 /* set the color of subcategory link as grey*/
 .subcategory a:link {
-    color:rgb(80, 80, 79);
+    color:rgb(80, 80, 79); /*setting the color to grey*/
 }
 /* set the color of subcategory link when hovering as darker grey*/
 .subcategory a:hover {
-    color: rgb(38, 38, 38);
-    background-color: transparent;
-    text-decoration: underline;
+    color: rgb(38, 38, 38); /*setting the color to dark grey*/
+    background-color: transparent; /*setting the background color as transparent*/
+    text-decoration: underline; /*setting the text decoration to add underline*/
 }
 /* set the color of subcategory link when active as grey*/
 .main-bar .active a{
-    color: #a1a0a0;
+    color: #a1a0a0; /*setting the color to grey*/
 }
 /* set the color of car listings link as dark grey, override white*/
 .car-listings a:link{
@@ -479,32 +479,32 @@ a:active {
 }
 /* style the about us section*/
 .about_us {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    margin: 20px auto;
-    max-width: 800px;
-    text-align: center;
+    background-color: #fff; /*setting the background color as white*/
+    padding: 20px; /*setting the padding*/
+    border-radius: 5px; /*setting the border radius*/
+    margin: 20px auto; /*setting the margin*/
+    max-width: 800px; /*setting the max width*/
+    text-align: center; /*align the text to the center*/
 }
 /* style the h1 on about us size and margin to create space*/
 .about_us h1 {
-    font-size: 1.5em;
-    margin-top: 10px;
+    font-size: 1.5em; /*setting the font size*/
+    margin-top: 10px; /*setting the margin top*/
 }
 /* style the h2 on about us size and margin to create space*/
 .about_us h2 {
-    font-size: 1.2em;
-    margin-top: 20px;
+    font-size: 1.2em; /*setting the font size*/
+    margin-top: 20px; /*setting the margin top*/
 }
 /* style the img on about us size and margin to create space, as well add a border radius and specific width and height*/
 .about_us img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-top: 10px;
+    width: 100px; /*setting the width of image*/
+    height: 100px; /*setting the height of image*/
+    border-radius: 50%; /*setting the border radius*/
+    margin-top: 10px; /*setting the margin top*/
 }
 /* style the h3 on about us size and margin to create space*/
 .about_us h3 {
-    font-size: 1rem;
-    margin: 10px;
+    font-size: 1rem; /*setting the font size*/
+    margin: 10px; /*setting the margin*/   
 }
